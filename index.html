@@ -183,6 +183,14 @@
     color: var(--orange);
     margin-top: -2px;
   }
+  .logo-brand{ margin-right: auto; }
+  .logo-img{
+    height: 64px;
+    width: auto;
+    max-width: 100%;
+    display: block;
+    object-fit: contain;
+  }
 
   nav.main-nav{ display:flex; align-items:center; gap:38px; }
   nav.main-nav a{
@@ -610,6 +618,7 @@
   @media (max-width: 760px){
     nav.main-nav, .nav-cta .btn-primary{ display:none; }
     .hamburger{ display:flex; }
+    .logo-img{ height: 44px; }
     .section-pad{ padding: 76px 0; }
     .form-row{ grid-template-columns: 1fr; }
     .form-card{ padding: 26px; }
@@ -631,17 +640,9 @@
 <!-- ============ HEADER ============ -->
 <header id="siteHeader">
   <div class="container">
-  <a .logo img{
-    height:56px;
-    width:auto;
-    display:block;
-}
-
-@media(max-width:768px){
-    .logo img{
-        height:44px;
-    }
-}
+    <a href="#inicio" class="logo logo-brand" aria-label="LF Transporte - Início">
+      <img src="images/logo.png" alt="LF Transporte" class="logo-img">
+    </a>
 
     <nav class="main-nav">
       <a href="#inicio">Início</a>
