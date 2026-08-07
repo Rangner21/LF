@@ -631,9 +631,17 @@
 <!-- ============ HEADER ============ -->
 <header id="siteHeader">
   <div class="container">
-  <a class="logo" href="#inicio">
-    <img src="images/logo.png" alt="LF Transporte">
-</a>
+  <a .logo img{
+    height:56px;
+    width:auto;
+    display:block;
+}
+
+@media(max-width:768px){
+    .logo img{
+        height:44px;
+    }
+}
 
     <nav class="main-nav">
       <a href="#inicio">Início</a>
