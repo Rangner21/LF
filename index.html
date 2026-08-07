@@ -3,741 +3,1115 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LF Transporte — Transporte Rodoviário de Cargas em Todo o Brasil</title>
-<meta name="description" content="A LF Transporte coordena uma rede de parceiros estratégicos para transporte rodoviário de cargas em todo o Brasil, com forte atuação no Nordeste. Solicite um orçamento pelo WhatsApp.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.lftransporte.com.br/">
+<title>LF Transporte | Rapidez. Qualidade. Dedicação.</title>
+<meta name="description" content="LF Transporte — soluções de transporte rodoviário para todo o Brasil, com forte atuação no Nordeste. Solicite seu orçamento.">
 
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="LF Transporte">
-<meta property="og:title" content="LF Transporte — Transporte Rodoviário de Cargas">
-<meta property="og:description" content="Rede de parceiros estratégicos para transporte rodoviário de cargas em todo o Brasil, com forte atuação no Nordeste. Rapidez. Qualidade. Dedicação.">
-<meta property="og:image" content="https://www.lftransporte.com.br/assets/images/og-image.jpg">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:url" content="https://www.lftransporte.com.br/">
+<style>
+  /* ============ TOKENS ============ */
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="LF Transporte — Transporte Rodoviário de Cargas">
-<meta name="twitter:description" content="Rede de parceiros estratégicos para transporte rodoviário de cargas em todo o Brasil, com forte atuação no Nordeste.">
-<meta name="twitter:image" content="https://www.lftransporte.com.br/assets/images/og-image.jpg">
+  :root{
+    --blue: #173A63;
+    --blue-deep: #0E2A4A;
+    --orange: #F58220;
+    --orange-dark: #D96A0F;
+    --white: #FFFFFF;
+    --bg-alt: #F5F7FA;
+    --ink: #1B1F27;
+    --muted: #5B6472;
+    --line: #E3E7EE;
+    --shadow: 0 20px 50px -20px rgba(15, 42, 74, 0.25);
+    --radius: 14px;
+    --font-display: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
 
-<!-- Favicon -->
-<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    font-family: var(--font-body);
+    color: var(--ink);
+    background: var(--white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  ul{ list-style:none; }
+  button{ font-family:inherit; cursor:pointer; border:none; background:none; }
+  section{ position:relative; }
+  .container{
+    width:100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-family: var(--font-body);
+    font-size: 12.5px;
+    font-weight:700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 14px;
+  }
+  .eyebrow::before{
+    content:"";
+    width: 22px;
+    height: 2px;
+    background: var(--orange);
+    display:inline-block;
+  }
+  h1,h2,h3,h4{
+    font-family: var(--font-display);
+    color: var(--blue);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: 0.2px;
+  }
+  h2{ font-size: clamp(30px, 4vw, 44px); }
+  h3{ font-size: 22px; font-weight:600; }
+  p{ color: var(--muted); }
+  .section-head{
+    max-width: 640px;
+    margin-bottom: 52px;
+  }
+  .section-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
+  .section-pad{ padding: 108px 0; }
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  :focus-visible{
+    outline: 2.5px solid var(--orange);
+    outline-offset: 3px;
+  }
 
-<!-- Styles -->
-<link rel="stylesheet" href="css/style.css">
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
 
-<!-- Dados estruturados (Organization) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "LF Transporte",
-  "foundingDate": "2015",
-  "description": "Transporte rodoviário de cargas por meio de uma rede de parceiros estratégicos, com atuação em todo o Brasil e forte presença no Nordeste.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Jaboatão dos Guararapes",
-    "addressRegion": "PE",
-    "addressCountry": "BR"
-  },
-  "areaServed": "BR",
-  "telephone": "+55 81 99530-8142",
-  "url": "https://www.lftransporte.com.br/"
-}
-</script>
+  /* ============ ROUTE LINE SIGNATURE ============ */
+  .route-line{
+    height: 3px;
+    width: 100%;
+    background-image: repeating-linear-gradient(90deg, var(--orange) 0 22px, transparent 22px 40px);
+    background-size: 400px 3px;
+    opacity: 0.9;
+    animation: route-move 14s linear infinite;
+  }
+  @keyframes route-move{
+    from{ background-position: 0 0; }
+    to{ background-position: -400px 0; }
+  }
+
+  /* ============ BUTTONS ============ */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding: 15px 30px;
+    border-radius: 999px;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 15px;
+    transition: transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
+    white-space: nowrap;
+  }
+  .btn-primary{
+    background: var(--orange);
+    color: var(--white);
+    box-shadow: 0 14px 30px -10px rgba(245,130,32,0.55);
+  }
+  .btn-primary:hover{ background: var(--orange-dark); transform: translateY(-2px); }
+  .btn-ghost{
+    background: rgba(255,255,255,0.08);
+    color: var(--white);
+    border: 1.5px solid rgba(255,255,255,0.55);
+    backdrop-filter: blur(4px);
+  }
+  .btn-ghost:hover{ background: rgba(255,255,255,0.18); transform: translateY(-2px); }
+  .btn-block{ width:100%; }
+
+  /* ============ HEADER ============ */
+  header{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 500;
+    padding: 22px 0;
+    transition: background .35s ease, padding .35s ease, box-shadow .35s ease;
+  }
+  header .container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  header.scrolled{
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(10px);
+    padding: 14px 0;
+    box-shadow: 0 8px 30px -20px rgba(15,42,74,0.35);
+  }
+  .logo{
+    display:flex; align-items:center; gap:10px;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    color: var(--white);
+    transition: color .35s ease;
+  }
+  header.scrolled .logo{ color: var(--blue); }
+  .logo-mark{
+    width: 40px; height: 40px;
+    border-radius: 10px;
+    background: var(--orange);
+    display:flex; align-items:center; justify-content:center;
+    color: var(--white);
+    font-weight: 800;
+    font-size: 17px;
+    flex-shrink:0;
+  }
+  .logo small{
+    display:block;
+    font-family: var(--font-body);
+    font-size: 9.5px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-top: -2px;
+  }
+
+  nav.main-nav{ display:flex; align-items:center; gap:38px; }
+  nav.main-nav a{
+    font-size: 14.5px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.92);
+    position: relative;
+    padding: 4px 0;
+    transition: color .3s ease;
+  }
+  header.scrolled nav.main-nav a{ color: var(--blue); }
+  nav.main-nav a::after{
+    content:"";
+    position:absolute;
+    left:0; bottom:-4px;
+    width:0; height:2px;
+    background: var(--orange);
+    transition: width .3s ease;
+  }
+  nav.main-nav a:hover::after{ width:100%; }
+  .nav-cta{ display:flex; align-items:center; gap:22px; }
+  .nav-cta .btn-primary{ padding: 11px 24px; font-size:14px; }
+
+  .hamburger{
+    display:none;
+    width: 42px; height: 42px;
+    border-radius: 10px;
+    align-items:center; justify-content:center;
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.4);
+  }
+  header.scrolled .hamburger{ background: rgba(23,58,99,0.08); border-color: rgba(23,58,99,0.2); }
+  .hamburger span, .hamburger::before, .hamburger::after{ display:none; }
+  .hamburger svg{ width:20px; height:20px; stroke: var(--white); transition: stroke .3s ease; }
+  header.scrolled .hamburger svg{ stroke: var(--blue); }
+
+  .mobile-nav{
+    position: fixed;
+    inset: 0;
+    background: var(--blue-deep);
+    z-index: 600;
+    display:flex;
+    flex-direction:column;
+    padding: 28px 28px 40px;
+    transform: translateY(-100%);
+    transition: transform .4s cubic-bezier(.65,0,.35,1);
+  }
+  .mobile-nav.open{ transform: translateY(0); }
+  .mobile-nav-top{ display:flex; align-items:center; justify-content:space-between; margin-bottom: 50px; }
+  .mobile-nav-close svg{ width:22px; height:22px; stroke:var(--white); }
+  .mobile-nav a{
+    font-family: var(--font-display);
+    font-size: 30px;
+    font-weight:600;
+    color: var(--white);
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+  .mobile-nav .btn-primary{ margin-top: 34px; }
+
+  /* ============ HERO ============ */
+  .hero{
+    min-height: 100vh;
+    display:flex;
+    align-items:flex-end;
+    position: relative;
+    overflow:hidden;
+    background: var(--blue-deep);
+  }
+  .hero-bg{
+    position:absolute; inset:0;
+    background-image: linear-gradient(180deg, rgba(14,41,74,0.55) 0%, rgba(14,41,74,0.72) 55%, rgba(14,41,74,0.96) 100%), url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1740&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center 62%;
+    animation: hero-zoom 20s ease-in-out infinite alternate;
+  }
+  @keyframes hero-zoom{ from{ transform: scale(1); } to{ transform: scale(1.06); } }
+  .hero-content{
+    position: relative;
+    z-index: 2;
+    padding: 200px 0 96px;
+    width:100%;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+    align-items:end;
+  }
+  .hero h1{
+    color: var(--white);
+    font-size: clamp(42px, 6.4vw, 78px);
+    line-height: 0.98;
+    margin-bottom: 22px;
+  }
+  .hero h1 em{
+    font-style: normal;
+    color: var(--orange);
+  }
+  .hero p.lead{
+    color: rgba(255,255,255,0.86);
+    font-size: 18px;
+    max-width: 480px;
+    margin-bottom: 36px;
+  }
+  .hero-actions{ display:flex; gap:16px; flex-wrap:wrap; }
+  .hero-meta{
+    border-left: 2px solid rgba(255,255,255,0.25);
+    padding-left: 28px;
+    display:flex;
+    flex-direction:column;
+    gap: 22px;
+  }
+  .hero-meta-item{ color: rgba(255,255,255,0.85); }
+  .hero-meta-item strong{
+    display:block;
+    font-family: var(--font-display);
+    font-size: 30px;
+    color: var(--white);
+    font-weight:700;
+    line-height:1;
+    margin-bottom: 4px;
+  }
+  .hero-meta-item span{ font-size: 13px; color: rgba(255,255,255,0.65); }
+  .hero .route-line{ margin-top: 56px; opacity: 0.5; }
+
+  .scroll-cue{
+    position:absolute;
+    right: 28px; bottom: 28px;
+    z-index:2;
+    display:flex; align-items:center; gap:10px;
+    color: rgba(255,255,255,0.7);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+  }
+  .scroll-cue::after{
+    content:"";
+    width:1px; height: 46px;
+    background: rgba(255,255,255,0.4);
+  }
+
+  /* ============ QUEM SOMOS ============ */
+  .about{ background: var(--white); }
+  .about-grid{
+    display:grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 70px;
+    align-items:center;
+  }
+  .about-media{ position:relative; }
+  .about-media img{
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    width:100%;
+    height: 460px;
+    object-fit: cover;
+  }
+  .about-badge{
+    position:absolute;
+    left: -28px; bottom: -28px;
+    background: var(--blue);
+    color: var(--white);
+    padding: 22px 26px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px -14px rgba(15,42,74,0.5);
+    max-width: 220px;
+  }
+  .about-badge strong{
+    display:block;
+    font-family: var(--font-display);
+    font-size: 34px;
+    color: var(--orange);
+    line-height:1;
+  }
+  .about-badge span{ font-size: 12.5px; color: rgba(255,255,255,0.85); line-height:1.4; display:block; margin-top:6px; }
+  .about-text p{ margin-bottom: 18px; font-size: 16px; }
+  .about-points{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 30px;
+  }
+  .about-point{
+    display:flex; align-items:center; gap:10px;
+    font-size: 14.5px;
+    font-weight:600;
+    color: var(--blue);
+  }
+  .about-point svg{ width:20px; height:20px; stroke: var(--orange); flex-shrink:0; }
+
+  /* ============ CARDS (SERVICES / SEGMENTS) ============ */
+  .bg-alt{ background: var(--bg-alt); }
+  .grid-cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 22px;
+  }
+  .card{
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 34px 26px;
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+  }
+  .card:hover{
+    transform: translateY(-6px);
+    box-shadow: var(--shadow);
+    border-color: transparent;
+  }
+  .card-icon{
+    width: 54px; height: 54px;
+    border-radius: 12px;
+    background: rgba(245,130,32,0.1);
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom: 20px;
+  }
+  .card-icon svg{ width:26px; height:26px; stroke: var(--orange); }
+  .card h3{ margin-bottom: 8px; }
+  .card p{ font-size: 14.5px; }
+
+  .segment-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+  .segment-card{
+    position:relative;
+    border-radius: var(--radius);
+    overflow:hidden;
+    height: 220px;
+    box-shadow: 0 10px 24px -14px rgba(15,42,74,0.3);
+  }
+  .segment-card img{
+    width:100%; height:100%; object-fit:cover;
+    transition: transform .5s ease;
+  }
+  .segment-card:hover img{ transform: scale(1.08); }
+  .segment-card::after{
+    content:"";
+    position:absolute; inset:0;
+    background: linear-gradient(180deg, rgba(14,41,74,0) 40%, rgba(14,41,74,0.88) 100%);
+  }
+  .segment-label{
+    position:absolute; left:20px; bottom:16px; z-index:2;
+    color:var(--white);
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight:600;
+  }
+
+  /* ============ DIFERENCIAIS ============ */
+  .diff-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow:hidden;
+  }
+  .diff-item{
+    background: var(--white);
+    padding: 40px 32px;
+    transition: background .3s ease;
+  }
+  .diff-item:hover{ background: var(--bg-alt); }
+  .diff-item svg{ width:28px; height:28px; stroke: var(--blue); margin-bottom: 18px; }
+  .diff-item h3{ font-size: 19px; margin-bottom: 8px; }
+  .diff-item p{ font-size: 14px; }
+
+  /* ============ CONTATO ============ */
+  .contact{ background: var(--blue-deep); position:relative; overflow:hidden; }
+  .contact::before{
+    content:"";
+    position:absolute; top:-140px; right:-140px;
+    width: 420px; height:420px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(245,130,32,0.22), transparent 70%);
+  }
+  .contact-grid{
+    display:grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 64px;
+    position: relative;
+    z-index:1;
+  }
+  .contact-info .eyebrow{ color: var(--orange); }
+  .contact-info h2{ color: var(--white); margin-bottom: 20px; }
+  .contact-info p{ color: rgba(255,255,255,0.75); margin-bottom: 34px; font-size:15.5px; }
+  .contact-detail{
+    display:flex; gap:14px; align-items:flex-start;
+    margin-bottom: 24px;
+  }
+  .contact-detail svg{ width:22px; height:22px; stroke: var(--orange); flex-shrink:0; margin-top:2px; }
+  .contact-detail strong{ display:block; color: var(--white); font-size: 15px; margin-bottom: 2px; }
+  .contact-detail span{ color: rgba(255,255,255,0.65); font-size: 14px; }
+
+  .form-card{
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 40px;
+    box-shadow: var(--shadow);
+  }
+  .form-row{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .field{ margin-bottom: 20px; }
+  .field label{
+    display:block;
+    font-size: 13px;
+    font-weight:600;
+    color: var(--blue);
+    margin-bottom: 7px;
+  }
+  .field label .opt{ color: var(--muted); font-weight:400; text-transform:none; }
+  .field input, .field select, .field textarea{
+    width:100%;
+    padding: 13px 15px;
+    border: 1.5px solid var(--line);
+    border-radius: 9px;
+    font-family: var(--font-body);
+    font-size: 14.5px;
+    color: var(--ink);
+    background: var(--white);
+    transition: border-color .25s ease, box-shadow .25s ease;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{
+    outline:none;
+    border-color: var(--orange);
+    box-shadow: 0 0 0 4px rgba(245,130,32,0.14);
+  }
+  .field textarea{ resize: vertical; min-height: 90px; }
+  .field.error input, .field.error select{ border-color:#D64545; }
+  .field .error-msg{
+    display:none;
+    color:#D64545;
+    font-size:12px;
+    margin-top:6px;
+    font-weight:500;
+  }
+  .field.error .error-msg{ display:block; }
+  .form-note{
+    font-size: 12.5px;
+    color: var(--muted);
+    margin-top: 14px;
+    text-align:center;
+  }
+  .form-success{
+    display:none;
+    align-items:center;
+    gap:10px;
+    background: rgba(38,166,91,0.1);
+    color:#1F8A4C;
+    padding: 13px 16px;
+    border-radius: 9px;
+    font-size: 13.5px;
+    font-weight:600;
+    margin-bottom: 18px;
+  }
+  .form-success.show{ display:flex; }
+  .form-success svg{ width:18px; height:18px; stroke:#1F8A4C; flex-shrink:0; }
+
+  /* ============ FOOTER ============ */
+  footer{ background: var(--blue-deep); border-top: 1px solid rgba(255,255,255,0.08); padding: 40px 0; }
+  .footer-grid{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap: 20px;
+  }
+  .footer-grid .logo{ color: var(--white); }
+  footer .footer-links{ display:flex; gap: 26px; flex-wrap:wrap; }
+  footer .footer-links a{ font-size: 13.5px; color: rgba(255,255,255,0.65); transition: color .25s ease; }
+  footer .footer-links a:hover{ color: var(--orange); }
+  footer .copyright{ font-size: 12.5px; color: rgba(255,255,255,0.45); }
+  .footer-bottom{
+    margin-top: 26px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  /* ============ WHATSAPP FLOAT ============ */
+  .wa-float{
+    position: fixed;
+    right: 24px; bottom: 24px;
+    z-index: 400;
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    background: #25D366;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow: 0 14px 30px -8px rgba(37,211,102,0.6);
+    animation: wa-pulse 2.6s ease-in-out infinite;
+  }
+  .wa-float svg{ width:30px; height:30px; fill:var(--white); }
+  .wa-float:hover{ transform: scale(1.06); }
+  @keyframes wa-pulse{
+    0%, 100%{ box-shadow: 0 14px 30px -8px rgba(37,211,102,0.6); }
+    50%{ box-shadow: 0 14px 30px -8px rgba(37,211,102,0.9), 0 0 0 10px rgba(37,211,102,0.12); }
+  }
+
+  /* ============ REVEAL ON SCROLL ============ */
+  .reveal{ opacity:0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in{ opacity:1; transform: translateY(0); }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 980px){
+    .hero-grid{ grid-template-columns: 1fr; }
+    .hero-meta{ border-left:none; border-top: 1px solid rgba(255,255,255,0.25); padding-left:0; padding-top:24px; flex-direction:row; flex-wrap:wrap; }
+    .about-grid{ grid-template-columns: 1fr; }
+    .about-media img{ height: 360px; }
+    .contact-grid{ grid-template-columns: 1fr; }
+    .segment-grid{ grid-template-columns: repeat(2, 1fr); }
+    .diff-grid{ grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 760px){
+    nav.main-nav, .nav-cta .btn-primary{ display:none; }
+    .hamburger{ display:flex; }
+    .section-pad{ padding: 76px 0; }
+    .form-row{ grid-template-columns: 1fr; }
+    .form-card{ padding: 26px; }
+    .about-badge{ position:static; margin-top: -40px; margin-left: 20px; }
+    .segment-grid{ grid-template-columns: 1fr 1fr; }
+    .diff-grid{ grid-template-columns: 1fr; }
+    .hero-content{ padding-top: 150px; }
+    .footer-grid{ flex-direction:column; align-items:flex-start; }
+  }
+
+  @media (max-width: 480px){
+    .segment-grid{ grid-template-columns: 1fr; }
+    .hero-meta{ gap: 16px; }
+  }
+</style>
 </head>
 <body>
 
-<a class="skip-link" href="#conteudo" style="position:absolute;left:-999px;top:auto;">Pular para o conteúdo</a>
-
-<!-- ==================== HEADER ==================== -->
-<header class="site-header">
-  <nav class="nav container" aria-label="Navegação principal">
-    <a href="#inicio" class="logo" aria-label="LF Transporte — página inicial">
-      LF <span>Transporte</span>
+<!-- ============ HEADER ============ -->
+<header id="siteHeader">
+  <div class="container">
+    <a href="#inicio" class="logo">
+      <span class="logo-mark">LF</span>
+      <span>LF Transporte<small>Rapidez · Qualidade · Dedicação</small></span>
     </a>
 
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#inicio">Início</a></li>
-      <li><a href="#quem-somos">Quem Somos</a></li>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#atuacao">Atuação</a></li>
-      <li><a href="#diferenciais">Diferenciais</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
+    <nav class="main-nav">
+      <a href="#inicio">Início</a>
+      <a href="#quem-somos">Quem Somos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#segmentos">Segmentos</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#contato">Contato</a>
+    </nav>
 
-    <div class="nav-actions">
-      <a href="#contato" class="btn btn-secondary">Falar com a equipe</a>
-      <a href="https://wa.me/5581995308142" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.28-1.38a9.9 9.9 0 0 0 4.71 1.2h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.14c-.24.68-1.4 1.3-1.93 1.37-.5.08-1.12.11-1.81-.11-.42-.13-.95-.31-1.65-.6-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.15.07.15.12.32.02.51-.09.19-.14.31-.28.48-.14.16-.29.36-.42.48-.14.13-.28.28-.13.55.16.28.7 1.17 1.52 1.9 1.05.94 1.93 1.23 2.2 1.37.28.14.44.12.6-.07.17-.2.7-.81.89-1.09.19-.28.38-.23.63-.14.26.09 1.66.79 1.95.93.28.14.47.21.54.33.07.12.07.68-.17 1.37Z"/></svg>
-        WhatsApp
-      </a>
+    <div class="nav-cta">
+      <a href="#contato" class="btn btn-primary">Solicitar orçamento</a>
+      <button class="hamburger" id="openMobileNav" aria-label="Abrir menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
     </div>
-
-    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+  </div>
 </header>
 
-<!-- Linha de rota — elemento de assinatura visual -->
-<div class="route-line" aria-hidden="true">
-  <div class="route-line__marker"></div>
+<!-- ============ MOBILE NAV ============ -->
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-top">
+    <span class="logo" style="color:#fff;"><span class="logo-mark">LF</span> LF Transporte</span>
+    <button class="mobile-nav-close" id="closeMobileNav" aria-label="Fechar menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+    </button>
+  </div>
+  <a href="#inicio">Início</a>
+  <a href="#quem-somos">Quem Somos</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#segmentos">Segmentos</a>
+  <a href="#diferenciais">Diferenciais</a>
+  <a href="#contato">Contato</a>
+  <a href="#contato" class="btn btn-primary btn-block">Solicitar orçamento</a>
 </div>
 
-<main id="conteudo">
-
-<!-- ==================== HERO ==================== -->
+<!-- ============ HERO ============ -->
 <section class="hero" id="inicio">
-  <div class="container">
-    <div class="hero-copy">
-      <span class="eyebrow hero-eyebrow">Transporte rodoviário de cargas</span>
-      <h1>O caminhão certo, para a carga certa, no prazo <em>combinado</em>.</h1>
-      <p class="hero-lead">
-        Coordenamos uma rede de parceiros estratégicos em todo o Brasil para colocar
-        o veículo ideal na sua operação — da carga fechada à distribuição fracionada,
-        com o Nordeste como base de atuação.
-      </p>
-      <div class="hero-ctas">
-        <a href="#contato" class="btn btn-primary">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.28-1.38a9.9 9.9 0 0 0 4.71 1.2h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.14c-.24.68-1.4 1.3-1.93 1.37-.5.08-1.12.11-1.81-.11-.42-.13-.95-.31-1.65-.6-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.15.07.15.12.32.02.51-.09.19-.14.31-.28.48-.14.16-.29.36-.42.48-.14.13-.28.28-.13.55.16.28.7 1.17 1.52 1.9 1.05.94 1.93 1.23 2.2 1.37.28.14.44.12.6-.07.17-.2.7-.81.89-1.09.19-.28.38-.23.63-.14.26.09 1.66.79 1.95.93.28.14.47.21.54.33.07.12.07.68-.17 1.37Z"/></svg>
-          Solicitar orçamento pelo WhatsApp
-        </a>
-        <a href="#servicos" class="btn btn-secondary">Conhecer serviços</a>
-      </div>
-      <div class="hero-badges">
-        <span class="hero-badge">Sede — Jaboatão dos Guararapes / PE</span>
-        <span class="hero-badge">Atuação nacional</span>
-        <span class="hero-badge">Foco no Nordeste</span>
-      </div>
-    </div>
-
-    <div class="hero-art" aria-hidden="true">
-      <svg viewBox="0 0 480 360" fill="none">
-        <defs>
-          <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="#2C5C95"/>
-            <stop offset="1" stop-color="#173A63"/>
-          </linearGradient>
-        </defs>
-        <rect x="0" y="0" width="480" height="360" rx="24" fill="url(#skyGrad)"/>
-        <!-- horizonte -->
-        <path d="M0 250 Q120 225 240 245 T480 235 V360 H0 Z" fill="#0E2038" opacity=".55"/>
-        <!-- estrada -->
-        <path d="M-20 340 L200 210 L280 210 L500 340 Z" fill="#0B1930"/>
-        <path class="hero-dash" d="M240 210 L240 340" stroke="#F58220" stroke-width="5" stroke-linecap="round"/>
-        <!-- caminhão (silhueta simplificada) -->
-        <g transform="translate(120,150)">
-          <rect x="0" y="40" width="118" height="46" rx="4" fill="#E7ECF4"/>
-          <rect x="112" y="14" width="52" height="72" rx="6" fill="#F58220"/>
-          <rect x="122" y="26" width="24" height="20" rx="2" fill="#173A63"/>
-          <circle cx="34" cy="92" r="15" fill="#0B1930"/>
-          <circle cx="34" cy="92" r="6" fill="#8892A0"/>
-          <circle cx="140" cy="92" r="15" fill="#0B1930"/>
-          <circle cx="140" cy="92" r="6" fill="#8892A0"/>
-        </g>
-        <!-- linhas de velocidade -->
-        <line x1="20" y1="120" x2="80" y2="120" stroke="#F58220" stroke-width="3" opacity=".6" stroke-linecap="round"/>
-        <line x1="10" y1="150" x2="60" y2="150" stroke="#F58220" stroke-width="3" opacity=".4" stroke-linecap="round"/>
-      </svg>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== QUEM SOMOS ==================== -->
-<section id="quem-somos">
-  <div class="container about-grid">
-    <div class="about-copy reveal">
-      <span class="eyebrow">Quem somos</span>
-      <h2>Uma operação pensada em rede, não em garagem.</h2>
-      <p>
-        A LF Transporte nasceu em 2015, em Jaboatão dos Guararapes (PE), com um objetivo direto:
-        oferecer transporte rodoviário de cargas para empresas de diferentes segmentos com
-        agilidade e previsibilidade.
-      </p>
-      <p>
-        Em vez de operar com frota própria limitada a um único tipo de veículo, trabalhamos com
-        uma rede de parceiros estratégicos. Isso nos permite selecionar o veículo mais adequado
-        para cada operação — de carga fechada a distribuição fracionada — em vez de encaixar a
-        carga no que está disponível na garagem.
-      </p>
-      <div class="stat-strip">
-        <div class="stat-chip"><strong>2015</strong><span>Fundação da empresa</span></div>
-        <div class="stat-chip"><strong>PE</strong><span>Sede em Jaboatão dos Guararapes</span></div>
-        <div class="stat-chip"><strong>BR</strong><span>Atuação em todo o país</span></div>
-        <div class="stat-chip"><strong>NE</strong><span>Região de maior atuação</span></div>
-      </div>
-    </div>
-
-    <div class="model-card reveal">
-      <span class="eyebrow">Como funciona</span>
-      <h3 style="margin-top:.6rem;">O modelo de rede na prática</h3>
-      <ul class="model-list">
-        <li>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
-          <span>Cada solicitação é avaliada para definir o tipo de veículo e a rota mais adequados.</span>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
-          <span>A operação é acompanhada pela LF Transporte do início ao fim, mesmo com o veículo de um parceiro.</span>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
-          <span>A rede amplia a capacidade de atendimento sem depender de um único perfil de frota.</span>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
-          <span>O contato e a responsabilidade pela operação permanecem sempre com a nossa equipe.</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== SERVIÇOS ==================== -->
-<section class="bg-alt" id="servicos">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Serviços</span>
-      <h2>Soluções para cada perfil de carga</h2>
-      <p>Cinco frentes de atuação, combinadas conforme o volume, o prazo e o tipo de operação da sua empresa.</p>
-    </div>
-
-    <div class="card-grid">
-      <article class="service-card reveal">
-        <span class="index">01</span>
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="15" height="10"/><path d="M16 10h4l3 3v4h-7z"/><circle cx="6" cy="20" r="2"/><circle cx="18" cy="20" r="2"/></svg>
+  <div class="hero-bg"></div>
+  <div class="hero-content container">
+    <div class="hero-grid">
+      <div>
+        <h1>Sua carga no <em>destino certo</em>, no prazo certo.</h1>
+        <p class="lead">Há mais de 10 anos conectando empresas de todo o Brasil por meio de uma rede de parceiros estratégicos, com atuação especialmente forte no Nordeste.</p>
+        <div class="hero-actions">
+          <a href="#contato" class="btn btn-primary">Solicitar orçamento</a>
+          <a href="#servicos" class="btn btn-ghost">Conheça nossos serviços</a>
         </div>
-        <h3>Transporte Rodoviário</h3>
-        <p>Movimentação de cargas por rodovia com a combinação de veículo e rota mais adequada para cada operação, em todo o território nacional.</p>
-      </article>
-
-      <article class="service-card reveal">
-        <span class="index">02</span>
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="1"/><path d="M3 10h18"/></svg>
+        <div class="route-line"></div>
+      </div>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <strong>2015</strong>
+          <span>Ano de fundação</span>
         </div>
-        <h3>Carga Fechada</h3>
-        <p>Veículo dedicado a uma única operação, do carregamento à entrega, para quem precisa de exclusividade e previsibilidade de prazo.</p>
-      </article>
-
-      <article class="service-card reveal">
-        <span class="index">03</span>
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="7" height="7"/><rect x="14" y="4" width="7" height="7"/><rect x="3" y="15" width="7" height="7"/><rect x="14" y="15" width="7" height="7"/></svg>
+        <div class="hero-meta-item">
+          <strong>Nordeste</strong>
+          <span>Principal região de atuação</span>
         </div>
-        <h3>Carga Fracionada</h3>
-        <p>Divisão de espaço e custos entre embarques menores, sem abrir mão da organização e do acompanhamento da entrega.</p>
-      </article>
-
-      <article class="service-card reveal">
-        <span class="index">04</span>
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l6 3"/></svg>
+        <div class="hero-meta-item">
+          <strong>Brasil</strong>
+          <span>Cobertura em todo o território nacional</span>
         </div>
-        <h3>Distribuição</h3>
-        <p>Coordenação de múltiplos pontos de entrega a partir de uma única origem, com sequenciamento pensado para reduzir tempo de rota.</p>
-      </article>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue">Role para explorar</div>
+</section>
 
-      <article class="service-card reveal">
-        <span class="index">05</span>
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-4 4 8 2-4h6"/></svg>
+<!-- ============ QUEM SOMOS ============ -->
+<section class="about section-pad" id="quem-somos">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-media reveal">
+        <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=1200&auto=format&fit=crop" alt="Caminhão em rodovia representando a operação de transporte da LF Transporte">
+        <div class="about-badge">
+          <strong>2015</strong>
+          <span>No mercado desde a fundação, em Jaboatão dos Guararapes (PE)</span>
         </div>
-        <h3>Logística</h3>
-        <p>Planejamento da operação de ponta a ponta: definição de veículo, rota e janela de entrega antes da carga sair do pátio.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== ÁREA DE ATUAÇÃO ==================== -->
-<section id="atuacao">
-  <div class="container coverage">
-    <div class="coverage-copy reveal">
-      <span class="eyebrow">Área de atuação</span>
-      <h2>Sede no Nordeste, rotas para todo o Brasil.</h2>
-      <p>
-        A operação da LF Transporte tem origem em Jaboatão dos Guararapes (PE) e alcança
-        empresas em todas as regiões do país, com a maior concentração de operações
-        acontecendo no próprio Nordeste.
-      </p>
-      <ul class="coverage-list">
-        <li><span>Nordeste</span><span>Região de origem e maior atuação</span></li>
-        <li><span>Sudeste</span><span>Rotas regulares</span></li>
-        <li><span>Sul</span><span>Rotas regulares</span></li>
-        <li><span>Centro-Oeste</span><span>Rotas regulares</span></li>
-        <li><span>Norte</span><span>Rotas regulares</span></li>
-      </ul>
-    </div>
-
-    <div class="hub-diagram reveal" aria-hidden="true">
-      <svg viewBox="0 0 400 400" fill="none">
-        <circle cx="200" cy="200" r="150" stroke="#E4E7EC" stroke-width="1.5"/>
-        <circle cx="200" cy="200" r="95" stroke="#E4E7EC" stroke-width="1.5"/>
-        <g stroke="#173A63" stroke-width="2" class="hub-dash">
-          <line x1="200" y1="200" x2="200" y2="50"/>
-          <line x1="200" y1="200" x2="330" y2="130"/>
-          <line x1="200" y1="200" x2="330" y2="275"/>
-          <line x1="200" y1="200" x2="200" y2="355"/>
-          <line x1="200" y1="200" x2="70" y2="275"/>
-        </g>
-        <circle cx="200" cy="200" r="10" fill="#F58220"/>
-        <circle cx="200" cy="200" r="18" fill="none" stroke="#F58220" stroke-width="1.5" opacity=".5"/>
-        <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#173A63">
-          <circle cx="200" cy="50" r="5" fill="#173A63"/>
-          <text x="200" y="36" text-anchor="middle">NORTE</text>
-          <circle cx="330" cy="130" r="5" fill="#173A63"/>
-          <text x="345" y="126" text-anchor="start">NORDESTE</text>
-          <circle cx="330" cy="275" r="5" fill="#173A63"/>
-          <text x="345" y="279" text-anchor="start">SUDESTE</text>
-          <circle cx="200" cy="355" r="5" fill="#173A63"/>
-          <text x="200" y="376" text-anchor="middle">SUL</text>
-          <circle cx="70" cy="275" r="5" fill="#173A63"/>
-          <text x="55" y="279" text-anchor="end">C-OESTE</text>
-        </g>
-        <text x="200" y="204" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" fill="#fff" font-weight="600">PE</text>
-      </svg>
-    </div>
-  </div>
-</section>
-<!-- ==================== SEGMENTOS ==================== -->
-<section class="bg-alt" id="segmentos">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Segmentos atendidos</span>
-      <h2>Empresas de perfis diferentes, com uma coisa em comum: prazo</h2>
-      <p>Atendemos operações com necessidades distintas de manuseio, frequência e volume.</p>
-    </div>
-
-    <div class="segment-grid reveal">
-      <div class="segment-card">
-        <svg class="segment-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-6h6v6"/></svg>
-        <h3>Indústrias</h3>
-        <p>Cargas com cronograma de produção encadeado, exigindo regularidade nas coletas.</p>
       </div>
-      <div class="segment-card">
-        <svg class="segment-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="9" width="18" height="11"/><path d="M9 9V5a3 3 0 0 1 6 0v4"/></svg>
-        <h3>Distribuidores</h3>
-        <p>Entregas fracionadas para múltiplos pontos de venda dentro de uma mesma rota.</p>
-      </div>
-      <div class="segment-card">
-        <svg class="segment-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
-        <h3>Energia Solar</h3>
-        <p>Transporte de módulos e estruturas, itens sensíveis que exigem cuidado no manuseio.</p>
-      </div>
-      <div class="segment-card">
-        <svg class="segment-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 20h20M4 20V10l4-3 4 3v10M12 20v-6l4-3 4 3v6"/></svg>
-        <h3>Construção Civil</h3>
-        <p>Insumos e equipamentos com cronograma de obra a respeitar.</p>
-      </div>
-      <div class="segment-card">
-        <svg class="segment-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3l2 12h14l2-9H6"/><circle cx="8" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/></svg>
-        <h3>Agronegócio</h3>
-        <p>Escoamento de produção com janelas de safra que não podem esperar.</p>
-      </div>
-      <div class="segment-card">
-        <svg class="segment-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h18l-2 13H5L3 7Z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>
-        <h3>Comércio</h3>
-        <p>Reposição de estoque com regularidade e previsibilidade de chegada.</p>
+      <div class="about-text reveal">
+        <div class="eyebrow">Quem Somos</div>
+        <h2 style="margin-bottom:22px;">Dedicação em cada quilômetro rodado</h2>
+        <p>Fundada em 2015, em Jaboatão dos Guararapes (PE), a LF Transporte nasceu com o propósito de oferecer soluções de transporte rodoviário ágeis e confiáveis para empresas de todo o Brasil.</p>
+        <p>Com atuação especialmente forte na região Nordeste, construímos uma rede de parceiros estratégicos que nos permite atender diferentes tipos de carga com o mesmo cuidado e comprometimento do primeiro dia.</p>
+        <p>Nosso compromisso é simples: unir rapidez, qualidade e dedicação em cada etapa da operação — do primeiro contato até a entrega final.</p>
+        <div class="about-points">
+          <div class="about-point"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Cobertura nacional</div>
+          <div class="about-point"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Rede de parceiros</div>
+          <div class="about-point"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Foco no Nordeste</div>
+          <div class="about-point"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Atendimento próximo</div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ==================== DIFERENCIAIS ==================== -->
-<section class="bg-dark" id="diferenciais">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Diferenciais</span>
-      <h2>Por que empresas escolhem a LF Transporte</h2>
-    </div>
+<div class="container"><div class="route-line" style="opacity:0.25;"></div></div>
 
-    <div class="diff-grid reveal">
-      <div class="diff-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M4 9h16M8 3v3M16 3v3"/><path d="M9 14l2 2 4-4"/></svg>
-        <h3>Mais de 10 anos de mercado</h3>
-        <p>Atuação desde 2015 no transporte rodoviário de cargas.</p>
-      </div>
-      <div class="diff-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="12" cy="18" r="3"/><path d="M8.5 7.5 15.5 16.5M15.5 7.5 8.5 16.5"/></svg>
-        <h3>Rede estratégica de parceiros</h3>
-        <p>Veículo mais adequado para cada tipo de operação.</p>
-      </div>
-      <div class="diff-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 1 1-4-7.2"/><path d="M21 3v6h-6"/></svg>
-        <h3>Atendimento personalizado</h3>
-        <p>Um ponto de contato direto do orçamento à entrega.</p>
-      </div>
-      <div class="diff-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3" /></svg>
-        <h3>Pontualidade</h3>
-        <p>Prazos definidos e acompanhados do início ao fim.</p>
-      </div>
-      <div class="diff-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z"/></svg>
-        <h3>Segurança</h3>
-        <p>Parceiros avaliados por critérios de operação segura.</p>
-      </div>
-      <div class="diff-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-        <h3>Rastreamento</h3>
-        <p>Acompanhamento da carga durante toda a operação.</p>
-      </div>
-      <div class="diff-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 4 6 4 9s-1.5 6.5-4 9c-2.5-2.5-4-6-4-9s1.5-6.5 4-9Z"/></svg>
-        <h3>Cobertura nacional</h3>
-        <p>Operações em todas as regiões do Brasil.</p>
-      </div>
-      <div class="diff-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21c3-6 6-9 9-9s6 3 9 9"/><circle cx="12" cy="7" r="4"/></svg>
-        <h3>Forte atuação no Nordeste</h3>
-        <p>Base de operações em Jaboatão dos Guararapes (PE).</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== PARCEIROS ==================== -->
-<section id="parceiros">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Rede de parceiros</span>
-      <h2>Como selecionamos quem roda com a nossa marca</h2>
-      <p>Cada transportador parceiro passa por critérios definidos antes de operar uma carga da LF Transporte.</p>
-    </div>
-
-    <div class="partners-grid reveal">
-      <div class="partner-card">
-        <h3>Documentação em dia</h3>
-        <p>Veículo e motorista com a documentação necessária para a operação regularizada.</p>
-      </div>
-      <div class="partner-card">
-        <h3>Compatibilidade com a carga</h3>
-        <p>Tipo de veículo compatível com o volume e a natureza da mercadoria transportada.</p>
-      </div>
-      <div class="partner-card">
-        <h3>Capacidade de rastreamento</h3>
-        <p>Meios para acompanhar a operação durante o trajeto, do embarque à entrega.</p>
-      </div>
-      <div class="partner-card">
-        <h3>Histórico de pontualidade</h3>
-        <p>Compromisso com os prazos combinados junto ao cliente final.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== GALERIA ==================== -->
-<section class="bg-alt" id="galeria">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Galeria</span>
-      <h2>A operação, do pátio à estrada</h2>
-      <p>Espaço reservado para registros fotográficos reais da operação — ilustrado por enquanto.</p>
-    </div>
-
-    <div class="gallery-grid reveal">
-      <div class="gallery-item tall" style="background:linear-gradient(155deg,#173A63,#2C5C95);">
-        <svg viewBox="0 0 200 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M-10 200 L90 120 L120 120 L220 200 Z" fill="#0E2038"/><line x1="105" y1="120" x2="105" y2="260" stroke="#F58220" stroke-width="4" stroke-dasharray="10 8"/></svg>
-        <span>Rodovia</span>
-      </div>
-      <div class="gallery-item" style="background:linear-gradient(155deg,#0E2038,#173A63);">
-        <svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect x="30" y="60" width="140" height="55" fill="#F58220" opacity=".85"/><rect x="40" y="70" width="30" height="30" fill="#0E2038" opacity=".5"/><rect x="80" y="70" width="30" height="30" fill="#0E2038" opacity=".5"/></svg>
-        <span>Carregamento</span>
-      </div>
-      <div class="gallery-item" style="background:linear-gradient(155deg,#2C5C95,#173A63);">
-        <svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect x="40" y="40" width="120" height="80" fill="none" stroke="#fff" stroke-width="3" opacity=".8"/><path d="M55 80l20 20 45-45" stroke="#F58220" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span>Conferência de carga</span>
-      </div>
-      <div class="gallery-item" style="background:linear-gradient(155deg,#173A63,#0E2038);">
-        <svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><circle cx="100" cy="75" r="45" fill="none" stroke="#F58220" stroke-width="3"/><path d="M100 75V45M100 75l25 12" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg>
-        <span>Rastreamento</span>
-      </div>
-      <div class="gallery-item" style="background:linear-gradient(155deg,#2C5C95,#0E2038);">
-        <svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M40 100h120M60 100V70h80v30" stroke="#fff" stroke-width="3" fill="none"/><circle cx="75" cy="108" r="8" fill="#F58220"/><circle cx="135" cy="108" r="8" fill="#F58220"/></svg>
-        <span>Expedição</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== FAQ ==================== -->
-<section id="faq">
+<!-- ============ SERVIÇOS ============ -->
+<section class="section-pad bg-alt" id="servicos">
   <div class="container">
     <div class="section-head center reveal">
-      <span class="eyebrow">Perguntas frequentes</span>
-      <h2>Antes de solicitar, tire suas dúvidas</h2>
+      <div class="eyebrow" style="justify-content:center;">Serviços</div>
+      <h2>Soluções completas para sua operação logística</h2>
     </div>
-
-    <div class="faq-list reveal">
-      <details class="faq-item">
-        <summary class="faq-q">
-          Como funciona o processo de orçamento?
-          <span class="plus" aria-hidden="true"></span>
-        </summary>
-        <div class="faq-a">Você preenche o formulário de contato ou fala diretamente pelo WhatsApp, informando origem, destino e tipo de carga. A partir disso, avaliamos o veículo mais adequado e retornamos com a proposta.</div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">
-          A LF Transporte atende em todo o Brasil?
-          <span class="plus" aria-hidden="true"></span>
-        </summary>
-        <div class="faq-a">Sim. A operação alcança todas as regiões do país, com a maior concentração de rotas no Nordeste, onde fica nossa sede.</div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">
-          É possível rastrear a carga durante o transporte?
-          <span class="plus" aria-hidden="true"></span>
-        </summary>
-        <div class="faq-a">Sim. Um dos critérios para um parceiro operar com a LF Transporte é ter capacidade de rastreamento durante o trajeto.</div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">
-          Quais tipos de carga podem ser transportados?
-          <span class="plus" aria-hidden="true"></span>
-        </summary>
-        <div class="faq-a">Trabalhamos com carga geral, fechada e fracionada, para diferentes segmentos como indústria, distribuição, energia solar, construção civil, agronegócio e comércio. Fale com a nossa equipe para confirmar a viabilidade do seu caso.</div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">
-          Como funciona a rede de parceiros — é seguro?
-          <span class="plus" aria-hidden="true"></span>
-        </summary>
-        <div class="faq-a">Trabalhamos com transportadores parceiros avaliados por critérios como documentação, compatibilidade de veículo, capacidade de rastreamento e histórico de pontualidade. A responsabilidade pela operação permanece com a LF Transporte do início ao fim.</div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">
-          Qual o prazo médio de resposta a uma solicitação?
-          <span class="plus" aria-hidden="true"></span>
-        </summary>
-        <div class="faq-a">O retorno inicial acontece pelo WhatsApp, normalmente no mesmo dia útil, para alinhar os detalhes da operação e apresentar a proposta.</div>
-      </details>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== BLOG ==================== -->
-<section class="bg-alt" id="blog">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Conteúdo</span>
-      <h2>Blog LF Transporte</h2>
-      <p>Conteúdo sobre logística e transporte rodoviário para o seu negócio — em preparação.</p>
-    </div>
-
-    <div class="blog-grid reveal">
-      <article class="blog-card">
-        <div class="blog-thumb">
-          <svg viewBox="0 0 200 125" aria-hidden="true"><path d="M0 100 L60 60 L90 60 L150 100 Z" fill="#0E2038" opacity=".6"/></svg>
-        </div>
-        <div class="blog-body">
-          <span class="blog-tag">Logística</span>
-          <h3>Como escolher entre carga fechada e fracionada</h3>
-          <p>Critérios práticos para decidir o formato ideal para a sua próxima operação.</p>
-          <span class="blog-soon">Em breve</span>
-        </div>
-      </article>
-      <article class="blog-card">
-        <div class="blog-thumb">
-          <svg viewBox="0 0 200 125" aria-hidden="true"><circle cx="100" cy="62" r="35" fill="#0E2038" opacity=".6"/></svg>
-        </div>
-        <div class="blog-body">
-          <span class="blog-tag">Operação</span>
-          <h3>O que observar antes de fechar um frete</h3>
-          <p>Pontos de atenção para reduzir riscos e imprevistos na rota.</p>
-          <span class="blog-soon">Em breve</span>
-        </div>
-      </article>
-      <article class="blog-card">
-        <div class="blog-thumb">
-          <svg viewBox="0 0 200 125" aria-hidden="true"><rect x="55" y="35" width="90" height="55" fill="#0E2038" opacity=".6"/></svg>
-        </div>
-        <div class="blog-body">
-          <span class="blog-tag">Setores</span>
-          <h3>Transporte para energia solar: cuidados no manuseio</h3>
-          <p>O que muda no transporte de módulos e estruturas fotovoltaicas.</p>
-          <span class="blog-soon">Em breve</span>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== TRABALHE CONOSCO ==================== -->
-<section id="trabalhe-conosco">
-  <div class="container">
-    <div class="careers reveal">
-      <div>
-        <span class="eyebrow">Trabalhe conosco</span>
-        <h2>Motoristas e transportadoras parceiras</h2>
-        <p>
-          Se você é motorista autônomo ou representa uma transportadora e quer fazer parte
-          da nossa rede de parceiros, fale com a nossa equipe pelo WhatsApp.
-        </p>
-        <div class="careers-ctas">
-          <a href="https://wa.me/5581995308142?text=Ol%C3%A1!%20Tenho%20interesse%20em%20fazer%20parte%20da%20rede%20de%20parceiros%20da%20LF%20Transporte." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-            Falar pelo WhatsApp
-          </a>
-        </div>
+    <div class="grid-cards reveal">
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h13V6H3v11z"/><path d="M16 10h3.5l2.5 3v4h-6"/><circle cx="7" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></svg></div>
+        <h3>Transporte Rodoviário</h3>
+        <p>Movimentação de cargas entre estados com foco em agilidade e segurança em toda a rota.</p>
       </div>
-      <div class="careers-tags">
-        <span>Motoristas autônomos</span>
-        <span>Transportadoras parceiras</span>
-        <span>Todo o Brasil</span>
-        <span>Diferentes tipos de veículo</span>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg></div>
+        <h3>Carga Fechada</h3>
+        <p>Veículo dedicado exclusivamente à sua carga, do embarque até a entrega no destino.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+        <h3>Carga Fracionada</h3>
+        <p>Otimização de espaço e custo para cargas que dividem o veículo com outras remessas.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></div>
+        <h3>Distribuição</h3>
+        <p>Coordenação de entregas para múltiplos destinos com planejamento de rotas eficiente.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l4-8h10l4 8-4 8H7l-4-8z"/></svg></div>
+        <h3>Logística</h3>
+        <p>Planejamento e acompanhamento de toda a operação, do ponto de origem ao destino final.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ==================== CONTATO ==================== -->
-<section class="bg-dark" id="contato">
-  <div class="container contact-wrap">
-    <div class="contact-info reveal">
-      <span class="eyebrow">Contato</span>
-      <h2>Solicite um orçamento</h2>
-      <p>Preencha o formulário com os dados da sua operação e receba o retorno da nossa equipe pelo WhatsApp.</p>
+<!-- ============ SEGMENTOS ============ -->
+<section class="section-pad" id="segmentos">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">Segmentos</div>
+      <h2>Setores que confiam na nossa operação</h2>
+    </div>
+    <div class="segment-grid reveal">
+      <div class="segment-card">
+        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop" alt="Energia Solar">
+        <span class="segment-label">Energia Solar</span>
+      </div>
+      <div class="segment-card">
+        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop" alt="Construção Civil">
+        <span class="segment-label">Construção Civil</span>
+      </div>
+      <div class="segment-card">
+        <img src="https://images.unsplash.com/photo-1565891741441-64926e441838?q=80&w=800&auto=format&fit=crop" alt="Indústrias">
+        <span class="segment-label">Indústrias</span>
+      </div>
+      <div class="segment-card">
+        <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=800&auto=format&fit=crop" alt="Distribuidores">
+        <span class="segment-label">Distribuidores</span>
+      </div>
+      <div class="segment-card">
+        <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=800&auto=format&fit=crop" alt="Agronegócio">
+        <span class="segment-label">Agronegócio</span>
+      </div>
+      <div class="segment-card">
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=800&auto=format&fit=crop" alt="Comércio">
+        <span class="segment-label">Comércio</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <ul class="contact-details">
-        <li>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.28-1.38a9.9 9.9 0 0 0 4.71 1.2h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z"/></svg>
-          <div><strong>WhatsApp</strong><span>(81) 99530-8142</span></div>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          <div><strong>Sede</strong><span>Jaboatão dos Guararapes — PE</span></div>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 4 6 4 9s-1.5 6.5-4 9c-2.5-2.5-4-6-4-9s1.5-6.5 4-9Z"/></svg>
-          <div><strong>Área de atuação</strong><span>Todo o Brasil, com foco no Nordeste</span></div>
-        </li>
+<!-- ============ DIFERENCIAIS ============ -->
+<section class="section-pad bg-alt" id="diferenciais">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">Diferenciais</div>
+      <h2>Por que empresas escolhem a LF Transporte</h2>
+    </div>
+    <div class="diff-grid reveal">
+      <div class="diff-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <h3>Mais de 10 anos de mercado</h3>
+        <p>Experiência consolidada desde 2015 no transporte rodoviário de cargas.</p>
+      </div>
+      <div class="diff-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8 7.5L11 16M16 7.5L13 16M8.5 6h7"/></svg>
+        <h3>Rede de parceiros estratégicos</h3>
+        <p>Colaboração com parceiros qualificados para atender diferentes tipos de carga.</p>
+      </div>
+      <div class="diff-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        <h3>Pontualidade</h3>
+        <p>Compromisso com prazos combinados em cada etapa do transporte.</p>
+      </div>
+      <div class="diff-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6l7-3z"/></svg>
+        <h3>Segurança</h3>
+        <p>Cuidado com a integridade da carga do embarque até a entrega final.</p>
+      </div>
+      <div class="diff-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+        <h3>Rastreamento</h3>
+        <p>Acompanhamento da operação para manter você informado sobre sua carga.</p>
+      </div>
+      <div class="diff-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <h3>Atendimento personalizado</h3>
+        <p>Relacionamento próximo para entender a necessidade de cada cliente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTATO ============ -->
+<section class="section-pad contact" id="contato">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="eyebrow">Contato</div>
+        <h2>Solicite seu orçamento agora mesmo</h2>
+        <p>Preencha o formulário com os dados da sua carga. Ao enviar, você será direcionado diretamente para o nosso WhatsApp com as informações prontas.</p>
+
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <div><strong>Jaboatão dos Guararapes — PE</strong><span>Atendimento para todo o Brasil</span></div>
+        </div>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 2.9a2 2 0 0 1-.4 2.1L8 10a16 16 0 0 0 6 6l1.3-1.4a2 2 0 0 1 2.1-.4c.9.4 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+          <div><strong>(81) 99530-8142</strong><span>WhatsApp para orçamentos</span></div>
+        </div>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 8l9 6 9-6"/></svg>
+          <div><strong>Fale com nossa equipe</strong><span>Resposta rápida em horário comercial</span></div>
+        </div>
+
+        <div class="route-line" style="margin-top:40px; opacity:0.5;"></div>
+      </div>
+
+      <div class="reveal">
+        <form class="form-card" id="quoteForm" novalidate>
+          <div class="form-success" id="formSuccess">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            Redirecionando para o WhatsApp...
+          </div>
+
+          <div class="form-row">
+            <div class="field" data-field="nome">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" autocomplete="name">
+              <span class="error-msg">Informe seu nome.</span>
+            </div>
+            <div class="field" data-field="empresa">
+              <label for="empresa">Empresa</label>
+              <input type="text" id="empresa" name="empresa" autocomplete="organization">
+              <span class="error-msg">Informe o nome da empresa.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field" data-field="whatsapp">
+              <label for="whatsapp">WhatsApp</label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="(81) 90000-0000" autocomplete="tel">
+              <span class="error-msg">Informe um WhatsApp para contato.</span>
+            </div>
+            <div class="field" data-field="tipo">
+              <label for="tipo">Tipo de Carga</label>
+              <select id="tipo" name="tipo">
+                <option value="" disabled selected>Selecione</option>
+                <option>Carga Fechada</option>
+                <option>Carga Fracionada</option>
+                <option>Distribuição</option>
+                <option>Energia Solar</option>
+                <option>Construção Civil</option>
+                <option>Indústria</option>
+                <option>Agronegócio</option>
+                <option>Comércio</option>
+                <option>Outro</option>
+              </select>
+              <span class="error-msg">Selecione o tipo de carga.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field" data-field="origem">
+              <label for="origem">Cidade de Origem</label>
+              <input type="text" id="origem" name="origem" autocomplete="off">
+              <span class="error-msg">Informe a cidade de origem.</span>
+            </div>
+            <div class="field" data-field="destino">
+              <label for="destino">Cidade de Destino</label>
+              <input type="text" id="destino" name="destino" autocomplete="off">
+              <span class="error-msg">Informe a cidade de destino.</span>
+            </div>
+          </div>
+
+          <div class="field" data-field="observacoes">
+            <label for="observacoes">Observações <span class="opt">(opcional)</span></label>
+            <textarea id="observacoes" name="observacoes" placeholder="Detalhes adicionais sobre a carga, prazo ou peculiaridades do transporte."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+            Solicitar orçamento pelo WhatsApp
+          </button>
+          <p class="form-note">Você será redirecionado ao WhatsApp com os dados preenchidos.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <a href="#inicio" class="logo"><span class="logo-mark">LF</span> LF Transporte</a>
+      <ul class="footer-links">
+        <li><a href="#quem-somos">Quem Somos</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#segmentos">Segmentos</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </div>
-
-    <form class="form-card reveal" id="quote-form" novalidate>
-      <div class="form-row">
-        <div class="field">
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome" autocomplete="name" required>
-          <span class="field-error"></span>
-        </div>
-        <div class="field">
-          <label for="empresa">Empresa</label>
-          <input type="text" id="empresa" name="empresa" autocomplete="organization" required>
-          <span class="field-error"></span>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="field">
-          <label for="whatsapp">WhatsApp</label>
-          <input type="tel" id="whatsapp" name="whatsapp" inputmode="numeric" placeholder="(00) 00000-0000" autocomplete="tel" required>
-          <span class="field-error"></span>
-        </div>
-        <div class="field">
-          <label for="tipo-carga">Tipo de carga</label>
-          <select id="tipo-carga" name="tipo-carga" required>
-            <option value="" selected disabled>Selecione</option>
-            <option>Carga geral</option>
-            <option>Carga fechada</option>
-            <option>Carga fracionada</option>
-            <option>Carga paletizada</option>
-            <option>Carga perecível</option>
-            <option>Outro</option>
-          </select>
-          <span class="field-error"></span>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="field">
-          <label for="origem">Cidade de origem</label>
-          <input type="text" id="origem" name="origem" required>
-          <span class="field-error"></span>
-        </div>
-        <div class="field">
-          <label for="destino">Cidade de destino</label>
-          <input type="text" id="destino" name="destino" required>
-          <span class="field-error"></span>
-        </div>
-      </div>
-
-      <div class="field">
-        <label for="observacoes">Observações <span class="opt">(opcional)</span></label>
-        <textarea id="observacoes" name="observacoes" rows="3"></textarea>
-      </div>
-
-      <button type="submit" class="btn btn-primary btn-block">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.28-1.38a9.9 9.9 0 0 0 4.71 1.2h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.14c-.24.68-1.4 1.3-1.93 1.37-.5.08-1.12.11-1.81-.11-.42-.13-.95-.31-1.65-.6-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.15.07.15.12.32.02.51-.09.19-.14.31-.28.48-.14.16-.29.36-.42.48-.14.13-.28.28-.13.55.16.28.7 1.17 1.52 1.9 1.05.94 1.93 1.23 2.2 1.37.28.14.44.12.6-.07.17-.2.7-.81.89-1.09.19-.28.38-.23.63-.14.26.09 1.66.79 1.95.93.28.14.47.21.54.33.07.12.07.68-.17 1.37Z"/></svg>
-        Solicitar orçamento pelo WhatsApp
-      </button>
-      <p class="form-status" role="status" aria-live="polite"></p>
-      <p class="form-note">Ao enviar, você será direcionado ao WhatsApp com sua mensagem já preenchida.</p>
-    </form>
-  </div>
-</section>
-
-</main>
-
-<!-- ==================== BOTÃO FLUTUANTE WHATSAPP ==================== -->
-<a href="https://wa.me/5581995308142" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Falar no WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.28-1.38a9.9 9.9 0 0 0 4.71 1.2h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.14c-.24.68-1.4 1.3-1.93 1.37-.5.08-1.12.11-1.81-.11-.42-.13-.95-.31-1.65-.6-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.15.07.15.12.32.02.51-.09.19-.14.31-.28.48-.14.16-.29.36-.42.48-.14.13-.28.28-.13.55.16.28.7 1.17 1.52 1.9 1.05.94 1.93 1.23 2.2 1.37.28.14.44.12.6-.07.17-.2.7-.81.89-1.09.19-.28.38-.23.63-.14.26.09 1.66.79 1.95.93.28.14.47.21.54.33.07.12.07.68-.17 1.37Z"/></svg>
-</a>
-
-<!-- ==================== FOOTER ==================== -->
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="#inicio" class="logo">LF <span>Transporte</span></a>
-        <p>Rapidez. Qualidade. Dedicação. Transporte rodoviário de cargas em todo o Brasil desde 2015.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Empresa</h4>
-        <ul>
-          <li><a href="#quem-somos">Quem Somos</a></li>
-          <li><a href="#diferenciais">Diferenciais</a></li>
-          <li><a href="#parceiros">Parceiros</a></li>
-          <li><a href="#trabalhe-conosco">Trabalhe Conosco</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Serviços</h4>
-        <ul>
-          <li><a href="#servicos">Transporte Rodoviário</a></li>
-          <li><a href="#atuacao">Área de Atuação</a></li>
-          <li><a href="#segmentos">Segmentos</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Fale conosco</h4>
-        <ul>
-          <li><a href="#faq">Perguntas Frequentes</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contato">Contato</a></li>
-          <li><a href="https://wa.me/5581995308142" target="_blank" rel="noopener noreferrer">(81) 99530-8142</a></li>
-        </ul>
-      </div>
-    </div>
-
     <div class="footer-bottom">
-      <span>© <span id="current-year">2026</span> LF Transporte. Todos os direitos reservados.</span>
-      <span>Jaboatão dos Guararapes — Pernambuco</span>
+      <span class="copyright">© <span id="year"></span> LF Transporte — Jaboatão dos Guararapes, PE.</span>
+      <span class="copyright">Rapidez. Qualidade. Dedicação.</span>
     </div>
   </div>
 </footer>
 
-<script src="js/script.js"></script>
+<!-- ============ WHATSAPP FLOAT ============ -->
+<a href="#" id="waFloat" class="wa-float" aria-label="Falar no WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 32 32"><path d="M16.02 3C9.4 3 4.02 8.38 4.02 15c0 2.32.63 4.5 1.73 6.37L4 29l7.83-1.7A11.9 11.9 0 0 0 16.02 27C22.64 27 28 21.62 28 15S22.64 3 16.02 3zm0 21.7c-1.98 0-3.83-.55-5.4-1.5l-.39-.23-4.65 1 1.02-4.53-.25-.4a9.6 9.6 0 0 1-1.5-5.04c0-5.36 4.36-9.72 9.72-9.72 5.36 0 9.72 4.36 9.72 9.72 0 5.36-4.36 9.7-9.27 9.7zm5.3-7.24c-.29-.15-1.7-.84-1.96-.93-.26-.1-.46-.15-.65.15-.2.29-.75.93-.92 1.12-.17.2-.34.22-.63.07-.29-.14-1.22-.45-2.32-1.43-.86-.76-1.44-1.7-1.6-1.99-.17-.29-.02-.44.13-.59.13-.13.29-.34.44-.5.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.07-.15-.65-1.57-.9-2.15-.24-.57-.48-.5-.65-.5-.17-.01-.36-.01-.56-.01-.2 0-.51.07-.78.37-.27.29-1.02 1-1.02 2.43s1.05 2.82 1.19 3.01c.15.2 2.06 3.15 5 4.41.7.3 1.24.48 1.67.61.7.22 1.34.19 1.84.12.56-.08 1.7-.7 1.94-1.37.24-.68.24-1.26.17-1.38-.07-.13-.26-.2-.55-.34z"/></svg>
+</a>
+
+<script>
+(function(){
+  "use strict";
+
+  var WHATSAPP_NUMBER = "5581995308142";
+
+  /* ---------- Header scroll state ---------- */
+  var header = document.getElementById('siteHeader');
+  function onScroll(){
+    if(window.scrollY > 40){ header.classList.add('scrolled'); }
+    else{ header.classList.remove('scrolled'); }
+  }
+  window.addEventListener('scroll', onScroll, { passive:true });
+  onScroll();
+
+  /* ---------- Mobile nav ---------- */
+  var mobileNav = document.getElementById('mobileNav');
+  var openBtn = document.getElementById('openMobileNav');
+  var closeBtn = document.getElementById('closeMobileNav');
+
+  openBtn.addEventListener('click', function(){
+    mobileNav.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+  closeBtn.addEventListener('click', closeMobileNav);
+  mobileNav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', closeMobileNav);
+  });
+  function closeMobileNav(){
+    mobileNav.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  /* ---------- Reveal on scroll ---------- */
+  var revealEls = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* ---------- Footer year ---------- */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---------- WhatsApp floating button ---------- */
+  var waFloat = document.getElementById('waFloat');
+  var floatMsg = "Olá, equipe da LF Transporte! Gostaria de solicitar um orçamento.";
+  waFloat.href = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(floatMsg);
+
+  /* ---------- Quote form ---------- */
+  var form = document.getElementById('quoteForm');
+  var successBox = document.getElementById('formSuccess');
+  var submitBtn = document.getElementById('submitBtn');
+
+  var requiredFields = ['nome', 'empresa', 'whatsapp', 'origem', 'destino', 'tipo'];
+
+  function getFieldWrap(name){
+    return form.querySelector('.field[data-field="' + name + '"]');
+  }
+
+  function validate(){
+    var isValid = true;
+    requiredFields.forEach(function(name){
+      var input = form.elements[name];
+      var wrap = getFieldWrap(name);
+      var value = (input.value || '').trim();
+      if(!value){
+        wrap.classList.add('error');
+        isValid = false;
+      } else {
+        wrap.classList.remove('error');
+      }
+    });
+    return isValid;
+  }
+
+  requiredFields.forEach(function(name){
+    var input = form.elements[name];
+    var evt = (input.tagName === 'SELECT') ? 'change' : 'input';
+    input.addEventListener(evt, function(){
+      var wrap = getFieldWrap(name);
+      if((input.value || '').trim()){
+        wrap.classList.remove('error');
+      }
+    });
+  });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    if(!validate()){
+      var firstError = form.querySelector('.field.error input, .field.error select');
+      if(firstError){ firstError.focus({ preventScroll: true }); }
+      return false;
+    }
+
+    var nome = form.elements['nome'].value.trim();
+    var empresa = form.elements['empresa'].value.trim();
+    var whatsapp = form.elements['whatsapp'].value.trim();
+    var origem = form.elements['origem'].value.trim();
+    var destino = form.elements['destino'].value.trim();
+    var tipo = form.elements['tipo'].value.trim();
+    var observacoes = form.elements['observacoes'].value.trim() || 'Nenhuma';
+
+    var mensagem =
+      "Olá, equipe da LF Transporte!\n\n" +
+      "Gostaria de solicitar um orçamento.\n\n" +
+      "👤 Nome:\n" + nome + "\n\n" +
+      "🏢 Empresa:\n" + empresa + "\n\n" +
+      "📱 WhatsApp:\n" + whatsapp + "\n\n" +
+      "📍 Origem:\n" + origem + "\n\n" +
+      "📍 Destino:\n" + destino + "\n\n" +
+      "🚛 Tipo de carga:\n" + tipo + "\n\n" +
+      "📝 Observações:\n" + observacoes + "\n\n" +
+      "Aguardo retorno.";
+
+    var url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(mensagem);
+
+    successBox.classList.add('show');
+    submitBtn.disabled = true;
+
+    window.open(url, '_blank', 'noopener');
+
+    setTimeout(function(){
+      successBox.classList.remove('show');
+      submitBtn.disabled = false;
+    }, 3000);
+
+    return false;
+  });
+
+})();
+</script>
+
 </body>
 </html>
